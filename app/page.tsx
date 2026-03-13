@@ -57,7 +57,12 @@ const sections: PageSection[] = [
       imbalance makes homeownership more and more difficult for middle and lower income individuals/families. \
       For individuals without access to generational wealth or financial resources, such as many young people, \
       face major barriers when trying to save money, build assets, or invest in their future.",
-      ""
+      "Another factor that continues to widen this gap is generational wealth. Which refers to families who \
+      already possess financial resources with the ability to pass those advantages on to their children \
+      through property, investments, or financial support. These resources can help younger generations \
+      afford education, the path toward economic mobility becomes far more challenging. Without access to \
+      strong financial education or economic opportunities early in life, many people enter adulthood already \
+      facing structural disadvantages."
     ],
     quote:
       "[Insert a bold claim that explains how this system harms communities and blocks long-term stability.]",
