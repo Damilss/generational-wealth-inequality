@@ -23,7 +23,8 @@ type PageSection = {
 };
 
 const navItems = [
-  { id: "home", label: "Home / Thesis" },
+  { id: "home", label: "Home" },
+  { id: "thesis", label: "Thesis" },
   { id: "issue", label: "Why Is This an Issue?" },
   { id: "solutions", label: "Solutions" },
   { id: "change", label: "Making a Change" },
@@ -253,13 +254,16 @@ export default function Page() {
 
         <div className="hero-fade" aria-hidden="true" />
 
-        <section className="thesis-section">
+        <section id="thesis" className="thesis-section">
           <ScrollReveal duration={0.82} y={18} amount={0.08}>
             <div className="thesis-panel">
-              <p className="section-part">Our Position</p>
-              <p className="thesis-text">
-                [Place our full thesis statement here. 3-5 sentences to clearly state position, urgency, and our proposal direction.]
-              </p>
+              <p className="section-part">Thesis Section</p>
+              <h2 className="essay-title">Full Thesis / Essay Body</h2>
+              <div className="thesis-essay-block">
+                <p className="essay-text">
+                  [Paste your long thesis/argument draft here. This space is designed for full-length article writing, including multiple paragraphs, evidence analysis, and transitions.]
+                </p>
+              </div>
             </div>
           </ScrollReveal>
         </section>

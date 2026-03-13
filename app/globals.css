@@ -234,14 +234,75 @@ a {
   background: #f8f8f6;
   box-shadow: var(--shadow-soft);
   padding: clamp(1.2rem, 2vw + 0.8rem, 2.2rem);
+  display: grid;
+  gap: 0.78rem;
 }
 
-.thesis-text {
-  margin: 0.55rem 0 0;
-  color: #22314f;
-  font-size: clamp(1.16rem, 1.4vw, 1.8rem);
-  line-height: 1.45;
-  font-weight: 600;
+.essay-title {
+  margin: 0;
+  color: #1a284b;
+  font-family: var(--font-heading), sans-serif;
+  font-size: clamp(1.7rem, 2.6vw, 2.8rem);
+  line-height: 1.14;
+}
+
+.essay-dek {
+  margin: 0;
+  max-width: 72ch;
+  color: #3d4d70;
+  font-size: clamp(1rem, 1.2vw, 1.24rem);
+  line-height: 1.6;
+}
+
+.thesis-article-body {
+  border: 1px solid rgba(167, 178, 206, 0.5);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.82);
+  padding: clamp(1rem, 1.2vw + 0.7rem, 1.45rem);
+}
+
+.thesis-article-body::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.thesis-figure {
+  float: right;
+  width: min(40%, 340px);
+  margin: 0.2rem 0 1rem 1.2rem;
+  border: 1px solid rgba(167, 178, 206, 0.5);
+  border-radius: 12px;
+  padding: 0.48rem;
+  background: #f9fbff;
+}
+
+.thesis-figure-fallback {
+  display: block;
+  width: 100%;
+  height: 320px;
+  border: 0;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #eef2fa;
+}
+
+.thesis-figure figcaption {
+  margin-top: 0.52rem;
+  color: #556487;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.essay-paragraph {
+  margin: 0;
+  color: #2a3858;
+  font-size: clamp(1.02rem, 1.2vw, 1.3rem);
+  line-height: 1.68;
+}
+
+.essay-paragraph + .essay-paragraph {
+  margin-top: 0.9rem;
 }
 
 .content-section {
@@ -446,6 +507,17 @@ a {
 
   .thesis-panel {
     border-radius: 16px;
+  }
+
+  .thesis-figure {
+    float: none;
+    width: 100%;
+    margin: 0 0 0.9rem 0;
+  }
+
+  .thesis-figure object,
+  .thesis-figure img {
+    height: 220px;
   }
 
   .card-grid {
