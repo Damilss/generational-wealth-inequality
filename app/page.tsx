@@ -46,17 +46,17 @@ const sections: PageSection[] = [
       {
         value: "$800K+",
         title: "Example Metric",
-        body: "[Replace this with one major housing or cost-of-living statistic.]",
+        body: "[Replace this with any information we've found from articles or evidence.]",
       },
       {
         value: "44%",
         title: "Example Burden",
-        body: "[Replace this with one key burden statistic relevant to your argument.]",
+        body: "[Replace this with any information we've found from articles or evidence.]",
       },
       {
         value: "#1",
         title: "Example Rank",
-        body: "[Replace this with one ranking or comparison from your sources.]",
+        body: "[Replace this with any information we've found from articles or evidence.]",
       },
     ],
   },
@@ -76,7 +76,7 @@ const sections: PageSection[] = [
       "[Trust in Institutions: add one sentence about losing confidence in systems.]",
     ],
     quote:
-      "[Insert a transition statement here that moves your argument from impact toward policy action.]",
+      "[Insert a transition statement here that moves our argument from impact toward policy action.]",
   },
   {
     id: "change",
@@ -84,27 +84,27 @@ const sections: PageSection[] = [
     part: "Part III",
     title: "What Must Change",
     paragraphs: [
-      "[Use this section for your policy recommendations. Explain why these reforms are practical and why California should lead.]",
+      "[Use this section for our policy recommendations. Explain why these reforms are practical and why California should lead.]",
     ],
     cards: [
       {
         value: "01",
         title: "Education & Financial Literacy",
-        body: "[Sample text: outline your first solution and expected outcome.]",
+        body: "[Sample text: outline our first solution and expected outcome.]",
       },
       {
         value: "02",
         title: "Affordable Housing",
-        body: "[Sample text: outline your second solution and expected outcome.]",
+        body: "[Sample text: outline our second solution and expected outcome.]",
       },
       {
         value: "03",
         title: "Fair Wages",
-        body: "[Sample text: outline your third solution and expected outcome.]",
+        body: "[Sample text: outline our third solution and expected outcome.]",
       },
     ],
     closingNote:
-      "[Optional instructor/callout box: reinforce why your proposed plan is timely, achievable, and persuasive.]",
+      "[Optional instructor/callout box: reinforce why our proposed plan is timely, achievable, and persuasive.]",
   },
   {
     id: "works-cited",
@@ -112,7 +112,7 @@ const sections: PageSection[] = [
     part: "Part IV",
     title: "Works Cited",
     paragraphs: [
-      "[Replace each placeholder with your required citation format for ENGL 133.]",
+      "[Replace each placeholder with our required citation format for ENGL 133.]",
     ],
     cards: [
       {
@@ -125,7 +125,7 @@ const sections: PageSection[] = [
       },
       {
         title: "Citation Placeholder 3",
-        body: "[Interview, media, lecture, or dataset citation in your required style.]",
+        body: "[Interview, media, lecture, or dataset citation in our required style.]",
       },
     ],
   },
@@ -209,7 +209,7 @@ export default function Page() {
       <header className="top-nav">
         <div className="top-nav__inner">
           <a className="brand" href="#home">
-            Generational Argument
+            Generational Wealth Crisis
           </a>
 
           <nav aria-label="Page sections">
@@ -230,7 +230,7 @@ export default function Page() {
         <section id="home" className="hero-section">
           <div className="hero-content">
             <ScrollReveal duration={0.75} y={20} amount={0.08}>
-              <p className="hero-label">Essay III - English Class</p>
+              <p className="hero-label">Essay III - ENGL 133</p>
             </ScrollReveal>
 
             <ScrollReveal delay={0.06} duration={0.82} y={24} amount={0.08}>
@@ -241,12 +241,12 @@ export default function Page() {
 
             <ScrollReveal delay={0.12} duration={0.82} y={20} amount={0.08}>
               <p className="hero-subtitle">
-                [Insert your short thesis preview here. Keep this section clear and direct so readers immediately understand your argument.]
+                [Insert short thesis preview here. Keep this section clear and direct so readers immediately understand our argument.]
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={0.18} duration={0.78} y={18} amount={0.08}>
-              <p className="hero-meta">Proposal Argument • Spring 2026</p>
+              <p className="hero-meta">Emilio Scott, James Barrios, Lucas Garcia, Daniel • Winter 2026</p>
             </ScrollReveal>
           </div>
         </section>
@@ -258,7 +258,7 @@ export default function Page() {
             <div className="thesis-panel">
               <p className="section-part">Our Position</p>
               <p className="thesis-text">
-                [Place your full thesis statement here. Use 3-5 sentences to clearly state your position, urgency, and your proposal direction.]
+                [Place our full thesis statement here. 3-5 sentences to clearly state position, urgency, and our proposal direction.]
               </p>
             </div>
           </ScrollReveal>
