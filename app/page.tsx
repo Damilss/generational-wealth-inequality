@@ -1,182 +1,205 @@
 "use client";
 
 import { motion, useScroll, useSpring } from "framer-motion";
+import ScrollReveal from "@/components/ScrollReveal";
 
-type SectionData = {
-  id: string;
-  navLabel: string;
-  kicker: string;
+type StatCard = {
+  value?: string;
   title: string;
-  lead: string;
-  tone: "sage" | "sand" | "slate" | "clay" | "neutral";
-  cards: Array<{
-    heading: string;
-    body: string;
-  }>;
+  body: string;
 };
 
-const sections: SectionData[] = [
-  {
-    id: "home",
-    navLabel: "Home / Thesis",
-    kicker: "Section 01",
-    title: "Home Page / Thesis",
-    lead: "Use this opening section for your core thesis statement. Keep your strongest claim here, then connect it to why your audience should care right away.",
-    tone: "sage",
-    cards: [
-      {
-        heading: "Thesis Draft Space",
-        body: "[Write your full thesis here. Aim for 2-4 sentences that name the issue, audience, and your proposed change.]",
-      },
-      {
-        heading: "Lead-In Evidence",
-        body: "[Add one key statistic, quote, or context sentence that frames the urgency of generational wealth inequality.]",
-      },
-      {
-        heading: "Rhetorical Purpose",
-        body: "[Explain what this page argues and how your multilingual rhetoric approach strengthens the message.]",
-      },
-    ],
-  },
+type PageSection = {
+  id: string;
+  navLabel: string;
+  part: string;
+  title: string;
+  paragraphs: string[];
+  quote?: string;
+  panelTitle?: string;
+  bullets?: string[];
+  cards?: StatCard[];
+  closingNote?: string;
+};
+
+const navItems = [
+  { id: "home", label: "Home / Thesis" },
+  { id: "issue", label: "Why Is This an Issue?" },
+  { id: "solutions", label: "Solutions" },
+  { id: "change", label: "Making a Change" },
+  { id: "works-cited", label: "Works Cited" },
+];
+
+const sections: PageSection[] = [
   {
     id: "issue",
     navLabel: "Why Is This an Issue?",
-    kicker: "Section 02",
-    title: "Why Is This an Issue?",
-    lead: "Build the problem section with clear, specific harms. Show how wealth inequality limits opportunity and why this matters for your chosen communities.",
-    tone: "sand",
+    part: "Part I",
+    title: "The Roots of the Crisis",
+    paragraphs: [
+      "[Use this section to explain where this inequality comes from. Add context about wages, housing costs, and inherited advantages.]",
+      "[Add evidence-based details: who is impacted, where, and what trend has changed over time.]",
+    ],
+    quote:
+      "[Insert a bold claim that explains how this system harms communities and blocks long-term stability.]",
     cards: [
       {
-        heading: "Current Conditions",
-        body: "[Describe the current inequality pattern and include dates, location, and who is impacted most.]",
+        value: "$800K+",
+        title: "Example Metric",
+        body: "[Replace this with one major housing or cost-of-living statistic.]",
       },
       {
-        heading: "Human Impact",
-        body: "[Add a short lived-example or narrative showing how this issue affects students, workers, or families.]",
+        value: "44%",
+        title: "Example Burden",
+        body: "[Replace this with one key burden statistic relevant to your argument.]",
       },
       {
-        heading: "Rhetorical Framing",
-        body: "[Explain how language choices in media or policy shape the way this issue is understood.]",
+        value: "#1",
+        title: "Example Rank",
+        body: "[Replace this with one ranking or comparison from your sources.]",
       },
     ],
   },
   {
     id: "solutions",
     navLabel: "Solutions",
-    kicker: "Section 03",
-    title: "Solutions",
-    lead: "Present practical and persuasive solutions. Keep each solution direct, feasible, and tied to evidence your audience can trust.",
-    tone: "slate",
-    cards: [
-      {
-        heading: "Policy Option A",
-        body: "[Insert your first proposed policy action and explain why it can realistically be adopted.]",
-      },
-      {
-        heading: "Policy Option B",
-        body: "[Insert your second solution and include expected outcomes for young adults.]",
-      },
-      {
-        heading: "Institutional Action",
-        body: "[Describe what schools, colleges, or community institutions can do immediately.]",
-      },
+    part: "Part II",
+    title: "A Generation Feeling the Impact",
+    paragraphs: [
+      "[Describe how this crisis affects young adults in everyday life: education, housing, jobs, and family milestones.]",
+      "[Connect personal impact to larger systems so readers understand why this is structural, not individual failure.]",
     ],
+    panelTitle: "Ripple Effects",
+    bullets: [
+      "[Mental Health: add one sentence about stress, uncertainty, and long-term pressure.]",
+      "[Social Mobility: add one sentence about blocked opportunity and limited upward movement.]",
+      "[Trust in Institutions: add one sentence about losing confidence in systems.]",
+    ],
+    quote:
+      "[Insert a transition statement here that moves your argument from impact toward policy action.]",
   },
   {
     id: "change",
     navLabel: "Making a Change",
-    kicker: "Section 04",
-    title: "Making a Change",
-    lead: "Turn your argument into action. This section should help readers know what to do next and why their participation matters.",
-    tone: "clay",
+    part: "Part III",
+    title: "What Must Change",
+    paragraphs: [
+      "[Use this section for your policy recommendations. Explain why these reforms are practical and why California should lead.]",
+    ],
     cards: [
       {
-        heading: "Who Needs to Act",
-        body: "[Identify decision-makers, community groups, and student voices that should be mobilized.]",
+        value: "01",
+        title: "Education & Financial Literacy",
+        body: "[Sample text: outline your first solution and expected outcome.]",
       },
       {
-        heading: "Action Plan",
-        body: "[List concrete next steps: advocacy, outreach, campus action, multilingual campaign material, or policy testimony.]",
+        value: "02",
+        title: "Affordable Housing",
+        body: "[Sample text: outline your second solution and expected outcome.]",
       },
       {
-        heading: "Call to Engagement",
-        body: "[Write your final persuasive push. Explain what readers can do this week to support your argument.]",
+        value: "03",
+        title: "Fair Wages",
+        body: "[Sample text: outline your third solution and expected outcome.]",
       },
     ],
+    closingNote:
+      "[Optional instructor/callout box: reinforce why your proposed plan is timely, achievable, and persuasive.]",
   },
   {
     id: "works-cited",
     navLabel: "Works Cited",
-    kicker: "Section 05",
+    part: "Part IV",
     title: "Works Cited",
-    lead: "Use this final section to store and format your references. Replace each placeholder with your official citation style for ENGL 133.",
-    tone: "neutral",
+    paragraphs: [
+      "[Replace each placeholder with your required citation format for ENGL 133.]",
+    ],
     cards: [
       {
-        heading: "Citation Placeholder 1",
-        body: "[Author Last Name, First Name. \"Title of Source.\" Publication, Date, URL or DOI.]",
+        title: "Citation Placeholder 1",
+        body: "[Author Last Name, First Name. \"Title of Source.\" Publication, Date, URL.]",
       },
       {
-        heading: "Citation Placeholder 2",
-        body: "[Organization or Author. \"Report or Article Title.\" Site/Journal, Date, Accessed Date.]",
+        title: "Citation Placeholder 2",
+        body: "[Organization. \"Report or Article Title.\" Publisher, Date, URL.]",
       },
       {
-        heading: "Citation Placeholder 3",
-        body: "[Interview, dataset, lecture, or media citation in your required citation format.]",
+        title: "Citation Placeholder 3",
+        body: "[Interview, media, lecture, or dataset citation in your required style.]",
       },
     ],
   },
 ];
 
-function NarrativeSection({
-  section,
-}: {
-  section: SectionData;
-}) {
+function ContentSection({ section }: { section: PageSection }) {
   return (
-    <motion.section
-      id={section.id}
-      className={`story-section story-section--${section.tone}`}
-      initial={{ opacity: 0, y: 42 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.25 }}
-      transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
-    >
-      <div className="section-panel">
-        <p className="section-kicker">{section.kicker}</p>
-        <h2 className="section-title">{section.title}</h2>
-        <p className="section-lead">{section.lead}</p>
+    <section id={section.id} className="content-section">
+      <div className="section-wrap">
+        <ScrollReveal>
+          <p className="section-part">{section.part}</p>
+        </ScrollReveal>
 
-        <div className="section-grid">
-          {section.cards.map((card, index) => (
-            <motion.article
-              key={card.heading}
-              className="section-card"
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.35 }}
-              transition={{
-                duration: 0.55,
-                delay: index * 0.08,
-                ease: "easeOut",
-              }}
-            >
-              <h3>{card.heading}</h3>
-              <p>{card.body}</p>
-            </motion.article>
+        <ScrollReveal delay={0.06}>
+          <h2 className="section-title">{section.title}</h2>
+        </ScrollReveal>
+
+        <div className="section-body">
+          {section.paragraphs.map((paragraph, index) => (
+            <ScrollReveal key={paragraph} delay={0.12 + index * 0.08}>
+              <p>{paragraph}</p>
+            </ScrollReveal>
           ))}
         </div>
+
+        {section.panelTitle && section.bullets && (
+          <ScrollReveal delay={0.18}>
+            <div className="bullet-panel">
+              <h3>{section.panelTitle}</h3>
+              <ul>
+                {section.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+            </div>
+          </ScrollReveal>
+        )}
+
+        {section.quote && (
+          <ScrollReveal delay={0.22}>
+            <blockquote className="section-quote">{section.quote}</blockquote>
+          </ScrollReveal>
+        )}
+
+        {section.cards && (
+          <div className="card-grid">
+            {section.cards.map((card, index) => (
+              <ScrollReveal key={card.title} delay={0.08 + index * 0.08}>
+                <article className="info-card">
+                  {card.value && <p className="card-value">{card.value}</p>}
+                  <h3>{card.title}</h3>
+                  <p>{card.body}</p>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+        )}
+
+        {section.closingNote && (
+          <ScrollReveal delay={0.16}>
+            <div className="closing-note">{section.closingNote}</div>
+          </ScrollReveal>
+        )}
       </div>
-    </motion.section>
+    </section>
   );
 }
 
 export default function Page() {
   const { scrollYProgress } = useScroll();
   const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 120,
+    stiffness: 130,
     damping: 28,
-    mass: 0.35,
+    mass: 0.38,
   });
 
   return (
@@ -186,15 +209,15 @@ export default function Page() {
       <header className="top-nav">
         <div className="top-nav__inner">
           <a className="brand" href="#home">
-            Generational Wealth & Mobility
+            Generational Argument
           </a>
 
-          <nav aria-label="Main page sections">
+          <nav aria-label="Page sections">
             <ul className="nav-links">
-              {sections.map((section) => (
-                <li key={section.id}>
-                  <a className="nav-link" href={`#${section.id}`}>
-                    {section.navLabel}
+              {navItems.map((item) => (
+                <li key={item.id}>
+                  <a className="nav-link" href={`#${item.id}`}>
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -203,9 +226,46 @@ export default function Page() {
         </div>
       </header>
 
-      <main className="main-content">
+      <main>
+        <section id="home" className="hero-section">
+          <div className="hero-content">
+            <ScrollReveal duration={0.75} y={20} amount={0.08}>
+              <p className="hero-label">Essay III - English Class</p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.06} duration={0.82} y={24} amount={0.08}>
+              <h1>
+                The Generational <span>Crisis</span> of Wealth Inequality in California
+              </h1>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.12} duration={0.82} y={20} amount={0.08}>
+              <p className="hero-subtitle">
+                [Insert your short thesis preview here. Keep this section clear and direct so readers immediately understand your argument.]
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.18} duration={0.78} y={18} amount={0.08}>
+              <p className="hero-meta">Proposal Argument • Spring 2026</p>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        <div className="hero-fade" aria-hidden="true" />
+
+        <section className="thesis-section">
+          <ScrollReveal duration={0.82} y={18} amount={0.08}>
+            <div className="thesis-panel">
+              <p className="section-part">Our Position</p>
+              <p className="thesis-text">
+                [Place your full thesis statement here. Use 3-5 sentences to clearly state your position, urgency, and your proposal direction.]
+              </p>
+            </div>
+          </ScrollReveal>
+        </section>
+
         {sections.map((section) => (
-          <NarrativeSection key={section.id} section={section} />
+          <ContentSection key={section.id} section={section} />
         ))}
       </main>
     </div>
