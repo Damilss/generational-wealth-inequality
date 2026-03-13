@@ -1,64 +1,212 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { motion, useScroll, useSpring } from "framer-motion";
+
+type SectionData = {
+  id: string;
+  navLabel: string;
+  kicker: string;
+  title: string;
+  lead: string;
+  tone: "sage" | "sand" | "slate" | "clay" | "neutral";
+  cards: Array<{
+    heading: string;
+    body: string;
+  }>;
+};
+
+const sections: SectionData[] = [
+  {
+    id: "home",
+    navLabel: "Home / Thesis",
+    kicker: "Section 01",
+    title: "Home Page / Thesis",
+    lead: "Use this opening section for your core thesis statement. Keep your strongest claim here, then connect it to why your audience should care right away.",
+    tone: "sage",
+    cards: [
+      {
+        heading: "Thesis Draft Space",
+        body: "[Write your full thesis here. Aim for 2-4 sentences that name the issue, audience, and your proposed change.]",
+      },
+      {
+        heading: "Lead-In Evidence",
+        body: "[Add one key statistic, quote, or context sentence that frames the urgency of generational wealth inequality.]",
+      },
+      {
+        heading: "Rhetorical Purpose",
+        body: "[Explain what this page argues and how your multilingual rhetoric approach strengthens the message.]",
+      },
+    ],
+  },
+  {
+    id: "issue",
+    navLabel: "Why Is This an Issue?",
+    kicker: "Section 02",
+    title: "Why Is This an Issue?",
+    lead: "Build the problem section with clear, specific harms. Show how wealth inequality limits opportunity and why this matters for your chosen communities.",
+    tone: "sand",
+    cards: [
+      {
+        heading: "Current Conditions",
+        body: "[Describe the current inequality pattern and include dates, location, and who is impacted most.]",
+      },
+      {
+        heading: "Human Impact",
+        body: "[Add a short lived-example or narrative showing how this issue affects students, workers, or families.]",
+      },
+      {
+        heading: "Rhetorical Framing",
+        body: "[Explain how language choices in media or policy shape the way this issue is understood.]",
+      },
+    ],
+  },
+  {
+    id: "solutions",
+    navLabel: "Solutions",
+    kicker: "Section 03",
+    title: "Solutions",
+    lead: "Present practical and persuasive solutions. Keep each solution direct, feasible, and tied to evidence your audience can trust.",
+    tone: "slate",
+    cards: [
+      {
+        heading: "Policy Option A",
+        body: "[Insert your first proposed policy action and explain why it can realistically be adopted.]",
+      },
+      {
+        heading: "Policy Option B",
+        body: "[Insert your second solution and include expected outcomes for young adults.]",
+      },
+      {
+        heading: "Institutional Action",
+        body: "[Describe what schools, colleges, or community institutions can do immediately.]",
+      },
+    ],
+  },
+  {
+    id: "change",
+    navLabel: "Making a Change",
+    kicker: "Section 04",
+    title: "Making a Change",
+    lead: "Turn your argument into action. This section should help readers know what to do next and why their participation matters.",
+    tone: "clay",
+    cards: [
+      {
+        heading: "Who Needs to Act",
+        body: "[Identify decision-makers, community groups, and student voices that should be mobilized.]",
+      },
+      {
+        heading: "Action Plan",
+        body: "[List concrete next steps: advocacy, outreach, campus action, multilingual campaign material, or policy testimony.]",
+      },
+      {
+        heading: "Call to Engagement",
+        body: "[Write your final persuasive push. Explain what readers can do this week to support your argument.]",
+      },
+    ],
+  },
+  {
+    id: "works-cited",
+    navLabel: "Works Cited",
+    kicker: "Section 05",
+    title: "Works Cited",
+    lead: "Use this final section to store and format your references. Replace each placeholder with your official citation style for ENGL 133.",
+    tone: "neutral",
+    cards: [
+      {
+        heading: "Citation Placeholder 1",
+        body: "[Author Last Name, First Name. \"Title of Source.\" Publication, Date, URL or DOI.]",
+      },
+      {
+        heading: "Citation Placeholder 2",
+        body: "[Organization or Author. \"Report or Article Title.\" Site/Journal, Date, Accessed Date.]",
+      },
+      {
+        heading: "Citation Placeholder 3",
+        body: "[Interview, dataset, lecture, or media citation in your required citation format.]",
+      },
+    ],
+  },
+];
+
+function NarrativeSection({
+  section,
+}: {
+  section: SectionData;
+}) {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <motion.section
+      id={section.id}
+      className={`story-section story-section--${section.tone}`}
+      initial={{ opacity: 0, y: 42 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+    >
+      <div className="section-panel">
+        <p className="section-kicker">{section.kicker}</p>
+        <h2 className="section-title">{section.title}</h2>
+        <p className="section-lead">{section.lead}</p>
+
+        <div className="section-grid">
+          {section.cards.map((card, index) => (
+            <motion.article
+              key={card.heading}
+              className="section-card"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.35 }}
+              transition={{
+                duration: 0.55,
+                delay: index * 0.08,
+                ease: "easeOut",
+              }}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              <h3>{card.heading}</h3>
+              <p>{card.body}</p>
+            </motion.article>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+      </div>
+    </motion.section>
+  );
+}
+
+export default function Page() {
+  const { scrollYProgress } = useScroll();
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 120,
+    damping: 28,
+    mass: 0.35,
+  });
+
+  return (
+    <div className="site-shell">
+      <motion.div className="scroll-progress" style={{ scaleX: smoothProgress }} />
+
+      <header className="top-nav">
+        <div className="top-nav__inner">
+          <a className="brand" href="#home">
+            Generational Wealth & Mobility
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+          <nav aria-label="Main page sections">
+            <ul className="nav-links">
+              {sections.map((section) => (
+                <li key={section.id}>
+                  <a className="nav-link" href={`#${section.id}`}>
+                    {section.navLabel}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
+      </header>
+
+      <main className="main-content">
+        {sections.map((section) => (
+          <NarrativeSection key={section.id} section={section} />
+        ))}
       </main>
     </div>
   );
