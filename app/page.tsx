@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useSpring } from "framer-motion";
+import { addScaleCorrector, motion, useScroll, useSpring } from "framer-motion";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 
@@ -38,9 +38,26 @@ const sections: PageSection[] = [
     navLabel: "Why Is This an Issue?",
     part: "Part I",
     title: "The Roots of the Crisis",
-    paragraphs: [
-      "[Use this section to explain where this inequality comes from. Add context about wages, housing costs, and inherited advantages.]",
-      "[Add evidence-based details: who is impacted, where, and what trend has changed over time.]",
+    paragraphs: ["California, a state often viewed as a place of oppoortunity, innocations, and economic \
+      success. However, this relentless effort for economic success has created wealth inequality that is \
+      increasingly affecting younger generations. While the state continues to generate enormous wealth, \
+      young californians are finding it harder than ever to achieve finanical independence or build long \
+      term stability. Wealth inequality is no longer just an economic statistic, but an issue shaping the \
+      opportunities available to people in our generation.",
+      "For many young adults, one of the first realities of this inequality appears in the housing market. \
+      California has some of the most expensive real estate in the Unites States. and the cost of living \
+      continues to rise faster than wages for many workes. Owning a home, something that was once seen as \
+      a major milestone for adulthood, now feels out of reach for many poeple. Even renting can be extremely \
+      difficult for individuals espeically in large cities. As a result, many young adults remain financially \
+      depedent longer than previous generations or delay important life decisions like moving out, starting \
+      families, or investing due to these prices.",
+      "A major driver of this issue is the relationship between housing costs and stagnant wages for many \
+      workers. While real estate prices across the nation and in California have risen dramatically over \
+      the past several decades, many jobs have not experiences the same level of income growth. This \
+      imbalance makes homeownership more and more difficult for middle and lower income individuals/families. \
+      For individuals without access to generational wealth or financial resources, such as many young people, \
+      face major barriers when trying to save money, build assets, or invest in their future.",
+      ""
     ],
     quote:
       "[Insert a bold claim that explains how this system harms communities and blocks long-term stability.]",
@@ -252,7 +269,6 @@ export default function Page() {
                 need-based tuition support, and integrates financial literacy education 
                 within the UC and CSU. Positioning California as a national model for 
                 restoring economic mobility among young adults.
-
               </p>
             </ScrollReveal>
 
