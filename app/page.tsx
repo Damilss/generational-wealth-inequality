@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useSpring } from "framer-motion";
 import ScrollReveal from "@/components/ScrollReveal";
+import Image from "next/image";
 
 type StatCard = {
   value?: string;
@@ -242,7 +243,16 @@ export default function Page() {
 
             <ScrollReveal delay={0.12} duration={0.82} y={20} amount={0.08}>
               <p className="hero-subtitle">
-                [Insert short thesis preview here. Keep this section clear and direct so readers immediately understand our argument.]
+                This project explores how wealth inequality has developed in California, 
+                why it has become such a significant challenge for younger generations, 
+                and what types of solutions can help restore economic mobility.
+                Wealth inequality increasingly restricts economic mobility for young adults 
+                nationwide. California must lead reform by implementing a Generational 
+                Economic Mobility initiative that mandates paid internships, expands 
+                need-based tuition support, and integrates financial literacy education 
+                within the UC and CSU. Positioning California as a national model for 
+                restoring economic mobility among young adults.
+
               </p>
             </ScrollReveal>
 
@@ -258,12 +268,57 @@ export default function Page() {
           <ScrollReveal duration={0.82} y={18} amount={0.08}>
             <div className="thesis-panel">
               <p className="section-part">Thesis Section</p>
-              <h2 className="essay-title">Full Thesis / Essay Body</h2>
-              <div className="thesis-essay-block">
-                <p className="essay-text">
-                  [Paste your long thesis/argument draft here. This space is designed for full-length article writing, including multiple paragraphs, evidence analysis, and transitions.]
+              <h2 className="essay-title">Our Full Thesis Article</h2>
+
+              <article className="thesis-article-body">
+                <figure className="thesis-figure">
+                  <Image
+                    src="/fig_8.gif"
+                    alt="Figure 8 placeholder visual"
+                    width={900}
+                    height={700}
+                    className="thesis-figure-fallback"
+                  />
+                  <figcaption>Figure 8. [Replace with your source caption and citation.]</figcaption>
+                </figure>
+
+                <p className="essay-paragraph">
+                  For many young people, entering adulthood today looks very different from what previous
+                  generations experienced. The cost of attending college continues to rise, housing prices 
+                  have skyrocketed, and entry level wages have struggled to keep up with the increased cost 
+                  of living. Making the transition into financial independence more difficult than it once 
+                  was. (California Housing Affordability Tracker (4th Quarter 2025) [EconTax Blog]) Many 
+                  young adults are graduating with debt, facing expensive housing markets, and navigating 
+                  a workforce where stable wages and long-term career opportunities can be difficult to secure.
+                  (National context) Throughout the United States, the wealth gap between the highest and lowest 
+                  income households has reached historic levels, making it increasingly difficult for young adults 
+                  to get a good financial foothold once they enter the ‘real world.’ As opportunity becomes more 
+                  closely tied to family wealth rather than talent or effort, states like California have the 
+                  opportunity and responsibility to lead reforms to restore economic mobility.
                 </p>
-              </div>
+                <p className="essay-paragraph">
+                    This growing divide raises an important question: if economic opportunity is supposed to reward 
+                    hard work and talent, why are so many young people struggling to achieve financial stability? 
+                    The answer lies in broader economic conditions that have played a crucial role in widening the 
+                    wealth gap over time(California Budget & Policy Center). These conditions affect not only 
+                    individuals’ finances but also an entire generation's ability to build a sustainable living.
+                    (Why california Matters) California represents an important case study as the state is home to 
+                    some of the largest technology companies and wealthiest communities in the world, such as San Francisco, 
+                    Los Angeles, Beverly Hills, Hollywood,etc…, and yet it also contains some of the highest housing costs 
+                    and levels of income inequality in the country. (California Budget & Policy Center) This contradiction 
+                    showcases the central issue explored in this project: how can a state that generates so much economic 
+                    wealth still have such a large separation of wealth?
+                </p>
+                <p className="essay-paragraph">
+                  This project explores how wealth inequality has developed in California, why it has become such a 
+                  significant challenge for younger generations, and what types of solutions can help restore economic mobility.
+                  (Thesis/ call to action) Wealth inequality increasingly restricts economic mobility for young adults 
+                  nationwide. California must lead reform by implementing a Generational Economic Mobility initiative 
+                  that mandates paid internships, expands need-based tuition support, and integrates financial literacy 
+                  education within the UC and CSU. Positioning California as a national model for restoring economic 
+                  mobility among young adults.
+                </p>
+              </article>
             </div>
           </ScrollReveal>
         </section>
