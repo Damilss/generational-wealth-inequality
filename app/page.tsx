@@ -278,7 +278,7 @@ export default function Page() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.18} duration={0.78} y={18} amount={0.08}>
-              <p className="hero-meta">Emilio Scott, James Barrios, Lucas Garcia, Daniel • Winter 2026</p>
+              <p className="hero-meta">Emilio Scott, James Barrios, Lucas Garcia, Daniel Aquino • Winter 2026</p>
             </ScrollReveal>
           </div>
         </section>
