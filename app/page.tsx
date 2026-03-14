@@ -55,57 +55,19 @@ const sections: PageSection[] = [
     navLabel: "Why Is This an Issue?",
     part: "Part I",
     title: "The Roots of the Crisis",
-    paragraphs: ["California, a state often viewed as a place of oppoortunity, innovfations, and economic \
-      success. However, this relentless effort for economic success has created wealth inequality that is \
-      increasingly affecting younger generations. While the state continues to generate enormous wealth, \
-      young californians are finding it harder than ever to achieve finanical independence or build long \
-      term stability. Wealth inequality is no longer just an economic statistic, but an issue shaping the \
-      opportunities available to people in our generation.",
-      "For many young adults, one of the first realities of this inequality appears in the housing market. \
-      California has some of the most expensive real estate in the Unites States. and the cost of living \
-      continues to rise faster than wages for many workes. Owning a home, something that was once seen as \
-      a major milestone for adulthood, now feels out of reach for many poeple. Even renting can be extremely \
-      difficult for individuals espeically in large cities. As a result, many young adults remain financially \
-      depedent longer than previous generations or delay important life decisions like moving out, starting \
-      families, or investing due to these prices.",
-      "A major driver of this issue is the relationship between housing costs and stagnant wages for many \
-      workers. While real estate prices across the nation and in California have risen dramatically over \
-      the past several decades, many jobs have not experiences the same level of income growth. This \
-      imbalance makes homeownership more and more difficult for middle and lower income individuals/families. \
-      For individuals without access to generational wealth or financial resources, such as many young people, \
-      face major barriers when trying to save money, build assets, or invest in their future.",
-      "Another factor that continues to widen this gap is generational wealth. Which refers to families who \
-      already possess financial resources with the ability to pass those advantages on to their children \
-      through property, investments, or financial support. These resources can help younger generations \
-      afford education, the path toward economic mobility becomes far more challenging. Without access to \
-      strong financial education or economic opportunities early in life, many people enter adulthood already \
-      facing structural disadvantages.",
-      "Wealth inequality also contributes to broader social challenges such as gentrification, where wealthier \
-      residents move into communities and property values increase, resulting in forcing long time residents \
-      out. In many cases neighborhoods that were once home to working class families are transformed into \
-      spaces that are no longer affordable for the people who originally lived there. Urban Studies research \
-      shows that gentrification can lead to displacement, community, fragmentation, and increased housing \
-      instability for lower income residents (Urban Displacement - the Project Aims to Understand the Nature \
-      of Gentrification, and Displacement, and Exclusion in American Cities.)",
-      "The consequences of wealth inequality are becoming more and more visible among younger generations. \
-      Many young adults are delaying major milestones such as moving out of their parents homes, purchasing \
-      homes, getting married, or starting their own families. Which is shown by recent data illustrating \
-      that the percentage of young adults living with their parents is at one of the highest levels in modern \
-      history. Which is laregely due to the economic pressures like housing costs and student debt. (US Census \
-      Bureau)",
-      "Another consequence is the effect economic inequality has on people's mental and social well being. \
-      Financial instability can create uncertainty for the future, increasing stress especially those who \
-      feel that hard work alone is no longer enough to reach stability. Research in social science has shown \
-      that greater income inequality in a society is linked to higher levels of financial stress. (Urban \
-      Displacement - the Project Aims to Understand the Nature of Gentrification, and Displacement, and \
-      Exclusion in American Cities.)",
-      "For these reasons, wealth inequality in California must be understood as more than an economic \
-      imbalance. it represents a growing challenge for younger generations that affects economic \
-      mobility, stability, and long-term well-being of younger generations.",
+    paragraphs: [
+      "California is often viewed as a place of opportunity, innovation, and economic success. However, this relentless pursuit of growth has also produced wealth inequality that is increasingly affecting younger generations. While the state continues to generate enormous wealth, young Californians are finding it harder than ever to achieve financial independence or build long-term stability. Wealth inequality is no longer just an economic statistic; it now shapes the opportunities available to people in our generation.",
+      "For many young adults, one of the first realities of this inequality appears in the housing market. California has some of the most expensive real estate in the United States, and the cost of living continues to rise faster than wages for many workers. Owning a home, once seen as a major milestone of adulthood, now feels out of reach for many people. Even renting can be extremely difficult, especially in large cities. As a result, many young adults remain financially dependent longer than previous generations or delay major life decisions like moving out, starting families, or investing.",
+      "A major driver of this issue is the relationship between housing costs and stagnant wages. While real estate prices in California and across the nation have risen dramatically over the past several decades, many jobs have not experienced the same level of income growth. This imbalance makes homeownership increasingly difficult for middle- and lower-income individuals and families. For individuals without access to generational wealth or financial resources, especially many young people, major barriers remain when trying to save money, build assets, or invest in the future.",
+      "Another factor that continues to widen this gap is generational wealth, which refers to families that already possess financial resources and can pass those advantages to their children through property, investments, or direct support. These resources can help younger generations afford education and housing, while those without them face a much harder path toward economic mobility. Without access to strong financial education or early economic opportunities, many people enter adulthood already facing structural disadvantages.",
+      "Wealth inequality also contributes to broader social challenges such as gentrification, where wealthier residents move into communities and rising property values push long-time residents out. In many cases, neighborhoods that were once home to working-class families are transformed into spaces no longer affordable to the people who originally lived there. Urban Studies research shows that gentrification can lead to displacement, community fragmentation, and increased housing instability for lower-income residents (Urban Displacement - the Project Aims to Understand the Nature of Gentrification, and Displacement, and Exclusion in American Cities.)",
+      "The consequences of wealth inequality are becoming more visible among younger generations. Many young adults are delaying major milestones such as moving out of their parents' homes, purchasing homes, getting married, or starting families. Recent data shows that the percentage of young adults living with their parents is at one of the highest levels in modern history, largely because of economic pressures such as housing costs and student debt (US Census Bureau).",
+      "Another consequence is the effect economic inequality has on people's mental and social well-being. Financial instability can create uncertainty about the future and increase stress, especially for those who feel that hard work alone is no longer enough to reach stability. Research in social science has shown that greater income inequality in a society is linked to higher levels of financial stress (Urban Displacement - the Project Aims to Understand the Nature of Gentrification, and Displacement, and Exclusion in American Cities.)",
+      "For these reasons, wealth inequality in California must be understood as more than an economic imbalance. It represents a growing challenge for younger generations that affects economic mobility, stability, and long-term well-being.",
     ],
     media: {
       src: "/MWStateMap.png",
-      alt: "Map visual related to wealth inequality across California",
+      alt: "United States map showing state minimum wage levels",
       width: 1364,
       height: 1025,
       caption:
@@ -132,7 +94,7 @@ const sections: PageSection[] = [
       {
         title: "Solution 2",
         paragraph:
-          `Solution 2 (Nationwide): Increase Federal Minimum Wage Nationwide and improve workers' rights
+	          `Solution 2 (Nationwide): Increase Federal Minimum Wage Nationwide and improve workers' rights.
 While state-level educational reform targets early adulthood, a broader national labor reform is also 
 necessary to sustain long-term economic mobility. Guzman emphasizes, “The gaps in California’s equity 
 crisis come as a result of centuries of discrimination” (Guzman 2), tied to decades of discriminatory 
@@ -149,17 +111,16 @@ therefore, in the long run, benefiting both workers and local businesses. The fi
 be to increase the Federal minimum wage to a livable wage, estimated at roughly $23 per hour in 2025. 
 States should also seek to increase their own minimum wages due to some states having higher costs of living. 
 The Federal government should also implement stricter wage protections to avoid companies taking advantage of
- their employees. Some may argue that the increase in minimum wage could have a detriment towards small 
- businesses, however this can be mitigated by implementing federal support programs for small businesses. 
+ their employees. Some may argue that increasing the minimum wage could be detrimental to small
+ businesses; however, this can be mitigated by implementing federal support programs for small businesses. 
  An increased minimum wage may also improve productivity amongst workers. Additionally, strengthening workers’ 
  rights by expanding labor protections for entry-level employees and interns would help ensure that labor 
- contributes to increasing wealth instead of reinforcing income inequality. As well as forming new worker’s 
- unions in fields that have yet to form any would further improve workers’ rights and would also improve 
- working conditions.Educational reforms address access to economic mobility prior to a person entering the 
+ contributes to increasing wealth instead of reinforcing income inequality. Forming new workers’ unions in
+ fields that have not yet unionized would further improve workers’ rights and working conditions. Educational reforms address access to economic mobility prior to a person entering the 
  workforce full-time as well as giving them knowledge of how to properly handle their own finances. This 
- alone would not be enough but with the proposed federal wage changes, and improved workers rights 
+ alone would not be enough but with the proposed federal wage changes, and improved workers’ rights,
  California, and the rest of the United States would see a decrease in the wealth gap that we currently 
- are being affected by.Many people and primarily large corporations will see these attempts at raising 
+ are being affected by. Many people and primarily large corporations will see these attempts at raising 
  wages and improving workers’ rights as a threat to their income. In order to be able to properly implement 
  change the people have to speak out and reach out to their representatives in order to see true change. (465)
 `,
@@ -174,23 +135,23 @@ The Federal government should also implement stricter wage protections to avoid 
     part: "Part III",
     title: "Addressing the Counterargument",
     paragraphs: [
-      `Some critics advocate for government intervention, such as increasing the federal minimum wage or expanding 
-      tuition assistance. Could lead to economic consequences. Opposition to minimum wage increases make their case 
-      that raising the minimum wage may lead to job losses or financial strain on smaller businesses. However, 
-      research has pointed out that static wages have limited economic mobility for many Americans. As Michael A. 
-      Schultz explains, “low-wage workers experience limited upward mobility in the labor market over time” (Schultz 160). 
-      This proposes that preserving the current wage structure may reinforce existing inequalities rather than being 
-      stepping stones that allow workers to build long-term financial stability.`,
-      `Others still make the case that expansion of state-funded education programs could put more strain on government 
-      budgets. While these concerns are valid, yet the search shows that many Californians already struggle to meet 
-      basic needs. According to the California Budget and Policy Center, “many Californians are struggling to afford to 
-      live in the communities where they work” (“Many Californians Are Struggling”). Without important investment in 
-      education and economic opportunity, these inequalities are likely to carry on across generations.`,
-      `Furthermore, targeted programs alone cannot provide a permanent solution to systemic wealth inequality. Carmen 
-      Guzman notes that California’s Dream for All program is helpful for some families. The influence was a small 
-      footprint in potential homebuyers, and “will not be a cure-all for the crisis” (Guzman 18). Because wealth 
-      inequality is profoundly embedded within economic structures. Approaching the problem requires a broader policy 
-      solution that stretches access to education, improves wages, and strengthens the protection for workers. (261)`
+	      `Some critics argue that interventions such as increasing the federal minimum wage or expanding
+	      tuition assistance could lead to economic consequences. Opponents of minimum wage increases make the case
+	      that raising the minimum wage may lead to job losses or financial strain on smaller businesses. However, 
+	      research has pointed out that static wages have limited economic mobility for many Americans. As Michael A. 
+	      Schultz explains, “low-wage workers experience limited upward mobility in the labor market over time” (Schultz 160). 
+	      This proposes that preserving the current wage structure may reinforce existing inequalities rather than being 
+	      stepping stones that allow workers to build long-term financial stability.`,
+	      `Others still make the case that expansion of state-funded education programs could put more strain on government 
+	      budgets. While these concerns are valid, research shows that many Californians already struggle to meet 
+	      basic needs. According to the California Budget and Policy Center, “many Californians are struggling to afford to 
+	      live in the communities where they work” (“Many Californians Are Struggling”). Without important investment in 
+	      education and economic opportunity, these inequalities are likely to carry on across generations.`,
+	      `Furthermore, targeted programs alone cannot provide a permanent solution to systemic wealth inequality. Carmen 
+	      Guzman notes that California’s Dream for All program is helpful for some families. Its influence among
+	      potential homebuyers was limited, and it “will not be a cure-all for the crisis” (Guzman 18). Because wealth 
+	      inequality is profoundly embedded within economic structures, approaching the problem requires a broader policy 
+	      solution that stretches access to education, improves wages, and strengthens the protection for workers. (261)`
     ],
     media: {
       src: "/Screen-Shot-2024-04-17-at-3.56.17-PM.png",
@@ -207,10 +168,10 @@ The Federal government should also implement stricter wage protections to avoid 
     part: "Part IV",
     title: "Conclusion",
     paragraphs: [
-      `Wealth inequality in California represents a growing obstacle that extends far beyond simple economic statistics. For many young Americans, rising housing costs, stagnant wages, and limited access to financial resources have created financial independence significantly more difficult than it was for previous generations. These structural obstacles limit economic mobility and create a lasting disadvantage for individuals who lack the safety net of generational wealth or financial support.
-	    Addressing this issue requires harmonized policy solutions that work at both the state and national levels. Expansion of tuition assistance and financial literacy programs in California’s public universities can help young people gain the knowledge and financial stability needed to start their careers without overwhelming debt. While also having federal policies such as raising the minimum wage and stronger worker protection to ensure that employment paves a pathway to financial stability.
-      Together, these reforms demonstrate that economic mobility is not a simple result from an individual effort, but also the outcome of policies that shape access to opportunity. By implementing these changes, California has the potential to lead the nation in restoring economic opportunity for younger generations and future generations.
-      California has historically played an influential role in shaping our nation’s economic and social policies. Because the state has one of the largest economies in the world, policies that are implemented in California have often had a rippling effect across the United States. If California successfully expands educational access, improves workers' rights, and strengthens economic mobility programs for its residents, other states may follow its steps and adopt similar approaches. In this way, California could serve as an example for policies that are designed to help people, reduce wealth inequality, and restore opportunity for younger generations across the country. These reforms would not only support younger generations today but also strengthen long-term economic stability and opportunity for future generations to come across the state and nation. (313)
+	      `Wealth inequality in California represents a growing obstacle that extends far beyond simple economic statistics. For many young Americans, rising housing costs, stagnant wages, and limited access to financial resources have made financial independence significantly more difficult than it was for previous generations. These structural obstacles limit economic mobility and create a lasting disadvantage for individuals who lack the safety net of generational wealth or financial support.
+		    Addressing this issue requires harmonized policy solutions that work at both the state and national levels. Expansion of tuition assistance and financial literacy programs in California’s public universities can help young people gain the knowledge and financial stability needed to start their careers without overwhelming debt. Federal policies, such as raising the minimum wage and strengthening worker protections, are also necessary to ensure that employment provides a pathway to financial stability.
+	      Together, these reforms demonstrate that economic mobility is not a simple result of individual effort, but also the outcome of policies that shape access to opportunity. By implementing these changes, California has the potential to lead the nation in restoring economic opportunity for younger generations and future generations.
+	      California has historically played an influential role in shaping our nation’s economic and social policies. Because the state has one of the largest economies in the world, policies that are implemented in California have often had a rippling effect across the United States. If California successfully expands educational access, improves workers' rights, and strengthens economic mobility programs for its residents, other states may follow its steps and adopt similar approaches. In this way, California could serve as an example for policies that are designed to help people, reduce wealth inequality, and restore opportunity for younger generations across the country. These reforms would not only support younger generations today but also strengthen long-term economic stability and opportunity for future generations to come across the state and nation. (313)
 `
     ],
     
@@ -468,7 +429,7 @@ export default function Page() {
                 <figure className="thesis-figure">
                   <Image
                     src="/fig_8.gif"
-                    alt="Figure 8 placeholder visual"
+                    alt="Figure 8 county-level map of California income concentration"
                     width={900}
                     height={700}
                     className="thesis-figure-fallback"
@@ -484,11 +445,11 @@ export default function Page() {
                   For many young people, entering adulthood today looks very different from what previous
                   generations experienced. The cost of attending college continues to rise, housing prices 
                   have skyrocketed, and entry level wages have struggled to keep up with the increased cost 
-                  of living. Making the transition into financial independence more difficult than it once 
+                  of living, making the transition into financial independence more difficult than it once 
                   was. (California Housing Affordability Tracker (4th Quarter 2025) [EconTax Blog]) Many 
                   young adults are graduating with debt, facing expensive housing markets, and navigating 
                   a workforce where stable wages and long-term career opportunities can be difficult to secure.
-                  (National context) Throughout the United States, the wealth gap between the highest and lowest 
+                  Throughout the United States, the wealth gap between the highest and lowest 
                   income households has reached historic levels, making it increasingly difficult for young adults 
                   to get a good financial foothold once they enter the ‘real world.’ As opportunity becomes more 
                   closely tied to family wealth rather than talent or effort, states like California have the 
@@ -498,11 +459,11 @@ export default function Page() {
                     This growing divide raises an important question: if economic opportunity is supposed to reward 
                     hard work and talent, why are so many young people struggling to achieve financial stability? 
                     The answer lies in broader economic conditions that have played a crucial role in widening the 
-                    wealth gap over time(California Budget & Policy Center). These conditions affect not only 
+                    wealth gap over time (California Budget & Policy Center). These conditions affect not only 
                     individuals’ finances but also an entire generation's ability to build a sustainable living.
-                    (Why california Matters) California represents an important case study as the state is home to 
+                    California represents an important case study as the state is home to 
                     some of the largest technology companies and wealthiest communities in the world, such as San Francisco, 
-                    Los Angeles, Beverly Hills, Hollywood,etc…, and yet it also contains some of the highest housing costs 
+                    Los Angeles, Beverly Hills, and Hollywood, yet it also contains some of the highest housing costs 
                     and levels of income inequality in the country. (California Budget & Policy Center) This contradiction 
                     showcases the central issue explored in this project: how can a state that generates so much economic 
                     wealth still have such a large separation of wealth?
@@ -510,10 +471,10 @@ export default function Page() {
                 <p className="essay-paragraph">
                   This project explores how wealth inequality has developed in California, why it has become such a 
                   significant challenge for younger generations, and what types of solutions can help restore economic mobility.
-                  (Thesis/ call to action) Wealth inequality increasingly restricts economic mobility for young adults 
+                  Wealth inequality increasingly restricts economic mobility for young adults 
                   nationwide. California must lead reform by implementing a Generational Economic Mobility initiative 
                   that mandates paid internships, expands need-based tuition support, and integrates financial literacy 
-                  education within the UC and CSU. Positioning California as a national model for restoring economic 
+                  education within the UC and CSU, positioning California as a national model for restoring economic 
                   mobility among young adults.
                 </p>
               </article>
