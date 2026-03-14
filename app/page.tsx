@@ -108,6 +108,8 @@ const sections: PageSection[] = [
       alt: "Map visual related to wealth inequality across California",
       width: 1364,
       height: 1025,
+      caption:
+        "Figure 3. Minimum wage levels across the United States. Source: VCU RISE.",
     },
   },
   {
