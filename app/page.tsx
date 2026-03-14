@@ -32,6 +32,7 @@ type PageSection = {
   quote?: string;
   solutionPanels?: SolutionPanel[];
   media?: SectionMedia;
+  mediaPlacement?: "bottom" | "wrap-right";
   panelTitle?: string;
   bullets?: string[];
   cards?: StatCard[];
@@ -191,6 +192,14 @@ The Federal government should also implement stricter wage protections to avoid 
       inequality is profoundly embedded within economic structures. Approaching the problem requires a broader policy 
       solution that stretches access to education, improves wages, and strengthens the protection for workers. (261)`
     ],
+    media: {
+      src: "/Screen-Shot-2024-04-17-at-3.56.17-PM.png",
+      alt: "Graphic highlighting racial wealth gaps in California",
+      width: 1366,
+      height: 768,
+      caption: "Racial wealth disparities remain deeply concentrated across California communities.",
+    },
+    mediaPlacement: "wrap-right",
   },
   {
     id: "conclusion",
@@ -275,6 +284,8 @@ The Federal government should also implement stricter wage protections to avoid 
 ];
 
 function ContentSection({ section }: { section: PageSection }) {
+  const hasWrapRightMedia = section.media && section.mediaPlacement === "wrap-right";
+
   return (
     <section id={section.id} className="content-section">
       <div className="section-wrap">
@@ -286,7 +297,22 @@ function ContentSection({ section }: { section: PageSection }) {
           <h2 className="section-title">{section.title}</h2>
         </ScrollReveal>
 
-        <div className="section-body">
+        <div className={`section-body${hasWrapRightMedia ? " section-body--with-wrap-media" : ""}`}>
+          {hasWrapRightMedia && section.media && (
+            <ScrollReveal className="section-media-float" delay={0.1}>
+              <figure className="section-media section-media--inline">
+                <Image
+                  src={section.media.src}
+                  alt={section.media.alt}
+                  width={section.media.width}
+                  height={section.media.height}
+                  className="section-media-image"
+                />
+                {section.media.caption && <figcaption>{section.media.caption}</figcaption>}
+              </figure>
+            </ScrollReveal>
+          )}
+
           {section.paragraphs.map((paragraph, index) => (
             <ScrollReveal key={paragraph} delay={0.12 + index * 0.08}>
               <p>{paragraph}</p>
@@ -340,7 +366,7 @@ function ContentSection({ section }: { section: PageSection }) {
           </div>
         )}
 
-        {section.media && (
+        {section.media && !hasWrapRightMedia && (
           <ScrollReveal delay={0.14}>
             <figure className="section-media">
               <Image

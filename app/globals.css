@@ -350,12 +350,28 @@ a {
   gap: 1rem;
 }
 
+.section-body--with-wrap-media {
+  display: block;
+}
+
+.section-body--with-wrap-media::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .section-body p {
   margin: 0;
   color: var(--ink-soft);
   font-size: clamp(1.02rem, 1.4vw, 1.95rem);
   line-height: 1.53;
   max-width: 70ch;
+}
+
+.section-body--with-wrap-media .section-media-float {
+  float: right;
+  width: min(46%, 520px);
+  margin: 0 0 1rem 1.2rem;
 }
 
 .solution-panel-grid {
@@ -452,6 +468,11 @@ a {
   background: var(--bg-card);
   padding: clamp(0.7rem, 1.1vw, 1rem);
   box-shadow: 0 10px 30px rgba(7, 16, 42, 0.08);
+}
+
+.section-media--inline {
+  margin: 0;
+  max-width: 100%;
 }
 
 .section-media-image {
@@ -576,6 +597,12 @@ a {
 
   .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .section-body--with-wrap-media .section-media-float {
+    float: none;
+    width: 100%;
+    margin: 0 0 1rem 0;
   }
 
   .solution-panel-grid {
