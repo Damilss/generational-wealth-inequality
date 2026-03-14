@@ -124,11 +124,10 @@ const sections: PageSection[] = [
       {
         title: "Solution 1",
         paragraph: `Solution 1 (State): Having California expand state-fund tuition assistance and financial literacy programs at public universities to prevent wealth inequality from compounding across generations.
-
-Addressing generational wealth inequality requires much more than just a late housing intervention. Guzman’s analysis of California's Dream for All loan programs highlights that such programs can assist, yet their reach remains minimal. The program was “exhausted in 11 days, distributing $288 million to support the purchase of about 2500 homes" (Guzman 2) and was only granted in “10 counties" (Guzman 2) across California. In the end, Guzman concludes that the program influences “less than 1% of buyers" (8) and “will not be a cure-all for the crisis" (18).
-These discoveries imply that interventions occurring later in adulthood, such as homeownership subsidies, may not be adequate to close generational wealth gaps. Research quoted in the study further establishes that wealth disparities grow significantly during early adulthood. As noted in the literature review, “By age 30, the Black-white median wealth gap exceeds $21,000" (Guzman 7). This broadening gap highlights the magnitude of intervening before economic inequality compounds.
-California can intervene earlier in the life cycle by developing need-based tuition assistance within the UC and CSU systems. Lowering student debt for first-generation and low-income students reduces additional burdens in the critical transition into the workforce. Furthermore, introducing mandatory financial literacy education would address the exclusion created by the financial systems that have historically shaped wealth gaps. Guzman illuminates redlining, “created a structure that incentivized housing discrimination" (1), demonstrating how policy-driven exclusion built a limit on access to financial opportunity. Guaranteeing universal financial education would help address those historical disadvantages.
-By shifting intervention to the educational level, California can move to address those inequalities before they solidify into long-term wealth disparities. (269 words)`,
+        Addressing generational wealth inequality requires much more than just a late housing intervention. Guzman’s analysis of California's Dream for All loan programs highlights that such programs can assist, yet their reach remains minimal. The program was “exhausted in 11 days, distributing $288 million to support the purchase of about 2500 homes" (Guzman 2) and was only granted in “10 counties" (Guzman 2) across California. In the end, Guzman concludes that the program influences “less than 1% of buyers" (8) and “will not be a cure-all for the crisis" (18).
+        These discoveries imply that interventions occurring later in adulthood, such as homeownership subsidies, may not be adequate to close generational wealth gaps. Research quoted in the study further establishes that wealth disparities grow significantly during early adulthood. As noted in the literature review, “By age 30, the Black-white median wealth gap exceeds $21,000" (Guzman 7). This broadening gap highlights the magnitude of intervening before economic inequality compounds.
+        California can intervene earlier in the life cycle by developing need-based tuition assistance within the UC and CSU systems. Lowering student debt for first-generation and low-income students reduces additional burdens in the critical transition into the workforce. Furthermore, introducing mandatory financial literacy education would address the exclusion created by the financial systems that have historically shaped wealth gaps. Guzman illuminates redlining, “created a structure that incentivized housing discrimination" (1), demonstrating how policy-driven exclusion built a limit on access to financial opportunity. Guaranteeing universal financial education would help address those historical disadvantages.
+        By shifting intervention to the educational level, California can move to address those inequalities before they solidify into long-term wealth disparities. (269 words)`
       },
       {
         title: "Solution 2",
@@ -175,8 +174,23 @@ The Federal government should also implement stricter wage protections to avoid 
     part: "Part III",
     title: "Addressing the Counterargument",
     paragraphs: [
-      "[Add the strongest opposing view here. Explain why some people argue this inequality is normal or unavoidable.]",
-      "[Rebut that view with evidence and logic to show why structural change is still necessary.]",
+      `Some critics advocate for government intervention, such as increasing the federal minimum wage or expanding 
+      tuition assistance. Could lead to economic consequences. Opposition to minimum wage increases make their case 
+      that raising the minimum wage may lead to job losses or financial strain on smaller businesses. However, 
+      research has pointed out that static wages have limited economic mobility for many Americans. As Michael A. 
+      Schultz explains, “low-wage workers experience limited upward mobility in the labor market over time” (Schultz 160). 
+      This proposes that preserving the current wage structure may reinforce existing inequalities rather than being 
+      stepping stones that allow workers to build long-term financial stability.`,
+      `Others still make the case that expansion of state-funded education programs could put more strain on government 
+      budgets. While these concerns are valid, yet the search shows that many Californians already struggle to meet 
+      basic needs. According to the California Budget and Policy Center, “many Californians are struggling to afford to 
+      live in the communities where they work” (“Many Californians Are Struggling”). Without important investment in 
+      education and economic opportunity, these inequalities are likely to carry on across generations.`,
+      `Furthermore, targeted programs alone cannot provide a permanent solution to systemic wealth inequality. Carmen 
+      Guzman notes that California’s Dream for All program is helpful for some families. The influence was a small 
+      footprint in potential homebuyers, and “will not be a cure-all for the crisis” (Guzman 18). Because wealth 
+      inequality is profoundly embedded within economic structures. Approaching the problem requires a broader policy 
+      solution that stretches access to education, improves wages, and strengthens the protection for workers. (261)`
     ],
   },
   {
@@ -213,23 +227,11 @@ The Federal government should also implement stricter wage protections to avoid 
     part: "Part V",
     title: "Conclusion",
     paragraphs: [
-      `Some critics advocate for government intervention, such as increasing the federal minimum wage or expanding 
-      tuition assistance. Could lead to economic consequences. Opposition to minimum wage increases make their case 
-      that raising the minimum wage may lead to job losses or financial strain on smaller businesses. However, 
-      research has pointed out that static wages have limited economic mobility for many Americans. As Michael A. 
-      Schultz explains, “low-wage workers experience limited upward mobility in the labor market over time” (Schultz 160). 
-      This proposes that preserving the current wage structure may reinforce existing inequalities rather than being 
-      stepping stones that allow workers to build long-term financial stability.`,
-      `Others still make the case that expansion of state-funded education programs could put more strain on government 
-      budgets. While these concerns are valid, yet the search shows that many Californians already struggle to meet 
-      basic needs. According to the California Budget and Policy Center, “many Californians are struggling to afford to 
-      live in the communities where they work” (“Many Californians Are Struggling”). Without important investment in 
-      education and economic opportunity, these inequalities are likely to carry on across generations.`,
-      `Furthermore, targeted programs alone cannot provide a permanent solution to systemic wealth inequality. Carmen 
-      Guzman notes that California’s Dream for All program is helpful for some families. The influence was a small 
-      footprint in potential homebuyers, and “will not be a cure-all for the crisis” (Guzman 18). Because wealth 
-      inequality is profoundly embedded within economic structures. Approaching the problem requires a broader policy 
-      solution that stretches access to education, improves wages, and strengthens the protection for workers. (261)`
+      `Wealth inequality in California represents a growing obstacle that extends far beyond simple economic statistics. For many young Americans, rising housing costs, stagnant wages, and limited access to financial resources have created financial independence significantly more difficult than it was for previous generations. These structural obstacles limit economic mobility and create a lasting disadvantage for individuals who lack the safety net of generational wealth or financial support.
+	    Addressing this issue requires harmonized policy solutions that work at both the state and national levels. Expansion of tuition assistance and financial literacy programs in California’s public universities can help young people gain the knowledge and financial stability needed to start their careers without overwhelming debt. While also having federal policies such as raising the minimum wage and stronger worker protection to ensure that employment paves a pathway to financial stability.
+      Together, these reforms demonstrate that economic mobility is not a simple result from an individual effort, but also the outcome of policies that shape access to opportunity. By implementing these changes, California has the potential to lead the nation in restoring economic opportunity for younger generations and future generations.
+      California has historically played an influential role in shaping our nation’s economic and social policies. Because the state has one of the largest economies in the world, policies that are implemented in California have often had a rippling effect across the United States. If California successfully expands educational access, improves workers' rights, and strengthens economic mobility programs for its residents, other states may follow its steps and adopt similar approaches. In this way, California could serve as an example for policies that are designed to help people, reduce wealth inequality, and restore opportunity for younger generations across the country. These reforms would not only support younger generations today but also strengthen long-term economic stability and opportunity for future generations to come across the state and nation. (313)
+`
     ],
     
   },
@@ -239,20 +241,63 @@ The Federal government should also implement stricter wage protections to avoid 
     part: "Part VI",
     title: "Works Cited",
     paragraphs: [
-      "[Replace each placeholder with our required citation format for ENGL 133.]",
+      "MLA 9 citations (one source per card).",
     ],
     cards: [
       {
-        title: "Citation Placeholder 1",
-        body: "[Author Last Name, First Name. \"Title of Source.\" Publication, Date, URL.]",
+        title: "Anderson et al.",
+        body:
+          "Anderson, Alissa, et al. \"Many Californians Are Struggling to Live in Our Communities: Five Reasons to Share the State's Prosperity.\" California Budget & Policy Center, Jan. 2020, https://calbudgetcenter.org/resources/many-californians-are-struggling-to-live-in-our-communities/.",
       },
       {
-        title: "Citation Placeholder 2",
-        body: "[Organization. \"Report or Article Title.\" Publisher, Date, URL.]",
+        title: "Bentz",
+        body:
+          "Bentz, Alex. \"California Housing Affordability Tracker (4th Quarter 2025).\" EconTax Blog, Legislative Analyst's Office, 22 Jan. 2026, https://lao.ca.gov/LAOEconTax/Article/Detail/793.",
       },
       {
-        title: "Citation Placeholder 3",
-        body: "[Interview, media, lecture, or dataset citation in our required style.]",
+        title: "Bohn et al. (2020)",
+        body:
+          "Bohn, Sarah, et al. Income Inequality and Economic Opportunity in California. Public Policy Institute of California, Dec. 2020, https://www.ppic.org/publication/income-inequality-and-economic-opportunity-in-california/.",
+      },
+      {
+        title: "Center for Hunger-Free Communities",
+        body:
+          "Center for Hunger-Free Communities. \"Minimum Wage Is Not Enough: A True Living Wage Is Necessary to Reduce Poverty and Improve Health.\" Drexel University, 2021, https://drexel.edu/hunger-free-center/research/briefs-and-reports/minimum-wage-is-not-enough/.",
+      },
+      {
+        title: "Chapple, Thomas, and Zuk",
+        body:
+          "Chapple, Karen, Tim Thomas, and Miriam Zuk. Urban Displacement Project. Urban Displacement Project, 2021, https://www.urbandisplacement.org/.",
+      },
+      {
+        title: "Garcia et al.",
+        body:
+          "Garcia, David, et al. The Landscape of Middle-Income Housing Affordability in California. Terner Center for Housing Innovation, Apr. 2022, https://ternercenter.berkeley.edu/wp-content/uploads/2022/04/Landscape-of-Middle-Income-Housing-Affordability-April-2022.pdf.",
+      },
+      {
+        title: "Guzman",
+        body:
+          "Guzman, Carmen. \"Can California Effectively Address Its Racial and Ethnic Wealth Gaps Through the Dream for All Loan?\" Student Policy Research Papers, University of California Office of the President, 1 July 2024, https://escholarship.org/uc/item/65q4b72g.",
+      },
+      {
+        title: "Pang et al.",
+        body:
+          "Pang, Yali, et al. \"Equity Implications of the Unchanged Federal Minimum Wage Since 2009.\" RISE, Virginia Commonwealth University, Feb. 2025, https://rise.vcu.edu/news/news-posts/equity-implications-of-the-unchanged-federal-minimum-wage-since-2009.html.",
+      },
+      {
+        title: "Schultz",
+        body:
+          "Schultz, Michael A. \"The Wage Mobility of Low-Wage Workers in a Changing Economy, 1968 to 2014.\" RSF: The Russell Sage Foundation Journal of the Social Sciences, vol. 5, no. 4, Sept. 2019, pp. 159-89, https://doi.org/10.7758/RSF.2019.5.4.06.",
+      },
+      {
+        title: "Thorman and Payares-Montoya",
+        body:
+          "Thorman, Tess, and Daniel Payares-Montoya. \"Income Inequality in California.\" Public Policy Institute of California, Mar. 2025, https://www.ppic.org/publication/income-inequality-in-california/.",
+      },
+      {
+        title: "U.S. Census Bureau",
+        body:
+          "United States Census Bureau. \"Census.gov | U.S. Census Bureau Homepage.\" U.S. Census Bureau, https://www.census.gov/. Accessed 14 Mar. 2026.",
       },
     ],
   },

@@ -499,6 +499,7 @@ a {
   color: #4f6185;
   font-size: clamp(0.98rem, 1.1vw, 1.22rem);
   line-height: 1.55;
+  overflow-wrap: anywhere;
 }
 
 .closing-note {
