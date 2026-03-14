@@ -72,7 +72,7 @@ const sections: PageSection[] = [
       of Gentrification, and Displacement, and Exclusion in American Cities.)",
       "The consequences of wealth inequality are becoming more and more visible among younger generations. \
       Many young adults are delaying major milestones such as moving out of their parents homes, purchasing \
-      homes, getting marries, or starting their own families. Which is shown by recent data illustrating \
+      homes, getting married, or starting their own families. Which is shown by recent data illustrating \
       that the percentage of young adults living with their parents is at one of the highest levels in modern \
       history. Which is laregely due to the economic pressures like housing costs and student debt. (US Census \
       Bureau)",
