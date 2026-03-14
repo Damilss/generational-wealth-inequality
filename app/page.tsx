@@ -45,6 +45,7 @@ const navItems = [
   { id: "solutions", label: "Solutions" },
   { id: "counterargument", label: "Counterargument" },
   { id: "change", label: "Making a Change" },
+  { id: "conclusion", label: "Conclusion" },
   { id: "works-cited", label: "Works Cited" },
 ];
 
@@ -205,9 +206,19 @@ The Federal government should also implement stricter wage protections to avoid 
       "[Optional instructor/callout box: reinforce why our proposed plan is timely, achievable, and persuasive.]",
   },
   {
+    id: "conclusion",
+    navLabel: "Conclusion",
+    part: "Part V",
+    title: "Conclusion",
+    paragraphs: [
+      "[Use this section to restate your core claim and explain why your proposed solutions are urgent, practical, and necessary.]",
+      "[Close with a strong final takeaway that emphasizes long-term impact for younger generations in California and beyond.]",
+    ],
+  },
+  {
     id: "works-cited",
     navLabel: "Works Cited",
-    part: "Part V",
+    part: "Part VI",
     title: "Works Cited",
     paragraphs: [
       "[Replace each placeholder with our required citation format for ENGL 133.]",
