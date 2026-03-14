@@ -112,7 +112,12 @@ const sections: PageSection[] = [
     part: "Part II",
     title: "A Generation Feeling the Impact",
     paragraphs: [
-      "[Describe how this crisis affects young adults in everyday life: education, housing, jobs, and family milestones.]",
+      "Addresssing generational wealth inequality requires much more than just a late housing intervention. \
+      Guzman's analysis of California's Dream for All loan program highlights that such programs can assist, \
+      yet their reach remains minimal. The program was \"exhausted in 11 days, distributing $288 million \
+      to support the purchase of about 2500 homes\" (Guzman 2) and was only granted in \"10 counties\" (Guzman 2) \
+      across California. In the end. Guzman concludes that the progrma influences \"less than 1% of buyers\" (8) \
+      and \"will not be a cure-all for the crisis\" (18).",
       "[Connect personal impact to larger systems so readers understand why this is structural, not individual failure.]",
     ],
     panelTitle: "Ripple Effects",
