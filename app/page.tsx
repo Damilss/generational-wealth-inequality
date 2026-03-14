@@ -118,7 +118,7 @@ const sections: PageSection[] = [
     part: "Part II",
     title: "A Generation Feeling the Impact",
     paragraphs: [
-      "[Use this short intro to frame your proposed path forward before the two full solutions below.]",
+      "Fixing this issue takes more than one policy change. We need solutions that support young people early, strengthen financial stability over time, and address the larger systems that keep the wealth gap in place.",
     ],
     solutionPanels: [
       {
