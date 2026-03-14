@@ -446,7 +446,7 @@ export default function Page() {
                   generations experienced. The cost of attending college continues to rise, housing prices 
                   have skyrocketed, and entry level wages have struggled to keep up with the increased cost 
                   of living, making the transition into financial independence more difficult than it once 
-                  was. (California Housing Affordability Tracker (4th Quarter 2025) [EconTax Blog]) Many 
+                  was (Bentz). Many 
                   young adults are graduating with debt, facing expensive housing markets, and navigating 
                   a workforce where stable wages and long-term career opportunities can be difficult to secure.
                   Throughout the United States, the wealth gap between the highest and lowest 
