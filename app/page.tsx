@@ -167,7 +167,7 @@ The Federal government should also implement stricter wage protections to avoid 
       },
     ],
     quote:
-      "[Insert a bold claim that explains how this system harms communities and blocks long-term stability.]",
+      "“California's wealth gap will continue to widen, disproportionately forcing people.” (Guzman 2)",
   },
   {
     id: "counterargument",
@@ -213,9 +213,25 @@ The Federal government should also implement stricter wage protections to avoid 
     part: "Part V",
     title: "Conclusion",
     paragraphs: [
-      "[Use this section to restate your core claim and explain why your proposed solutions are urgent, practical, and necessary.]",
-      "[Close with a strong final takeaway that emphasizes long-term impact for younger generations in California and beyond.]",
+      `Some critics advocate for government intervention, such as increasing the federal minimum wage or expanding 
+      tuition assistance. Could lead to economic consequences. Opposition to minimum wage increases make their case 
+      that raising the minimum wage may lead to job losses or financial strain on smaller businesses. However, 
+      research has pointed out that static wages have limited economic mobility for many Americans. As Michael A. 
+      Schultz explains, “low-wage workers experience limited upward mobility in the labor market over time” (Schultz 160). 
+      This proposes that preserving the current wage structure may reinforce existing inequalities rather than being 
+      stepping stones that allow workers to build long-term financial stability.`,
+      `Others still make the case that expansion of state-funded education programs could put more strain on government 
+      budgets. While these concerns are valid, yet the search shows that many Californians already struggle to meet 
+      basic needs. According to the California Budget and Policy Center, “many Californians are struggling to afford to 
+      live in the communities where they work” (“Many Californians Are Struggling”). Without important investment in 
+      education and economic opportunity, these inequalities are likely to carry on across generations.`,
+      `Furthermore, targeted programs alone cannot provide a permanent solution to systemic wealth inequality. Carmen 
+      Guzman notes that California’s Dream for All program is helpful for some families. The influence was a small 
+      footprint in potential homebuyers, and “will not be a cure-all for the crisis” (Guzman 18). Because wealth 
+      inequality is profoundly embedded within economic structures. Approaching the problem requires a broader policy 
+      solution that stretches access to education, improves wages, and strengthens the protection for workers. (261)`
     ],
+    
   },
   {
     id: "works-cited",
