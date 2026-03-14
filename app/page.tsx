@@ -38,7 +38,7 @@ const sections: PageSection[] = [
     navLabel: "Why Is This an Issue?",
     part: "Part I",
     title: "The Roots of the Crisis",
-    paragraphs: ["California, a state often viewed as a place of oppoortunity, innocations, and economic \
+    paragraphs: ["California, a state often viewed as a place of oppoortunity, innovfations, and economic \
       success. However, this relentless effort for economic success has created wealth inequality that is \
       increasingly affecting younger generations. While the state continues to generate enormous wealth, \
       young californians are finding it harder than ever to achieve finanical independence or build long \
@@ -62,7 +62,29 @@ const sections: PageSection[] = [
       through property, investments, or financial support. These resources can help younger generations \
       afford education, the path toward economic mobility becomes far more challenging. Without access to \
       strong financial education or economic opportunities early in life, many people enter adulthood already \
-      facing structural disadvantages."
+      facing structural disadvantages.",
+      "Wealth inequality also contributes to broader social challenges such as gentrification, where wealthier \
+      residents move into communities and property values increase, resulting in forcing long time residents \
+      out. In many cases neighborhoods that were once home to working class families are transformed into \
+      spaces that are no longer affordable for the people who originally lived there. Urban Studies research \
+      shows that gentrification can lead to displacement, community, fragmentation, and increased housing \
+      instability for lower income residents (Urban Displacement - the Project Aims to Understand the Nature \
+      of Gentrification, and Displacement, and Exclusion in American Cities.)",
+      "The consequences of wealth inequality are becoming more and more visible among younger generations. \
+      Many young adults are delaying major milestones such as moving out of their parents homes, purchasing \
+      homes, getting marries, or starting their own families. Which is shown by recent data illustrating \
+      that the percentage of young adults living with their parents is at one of the highest levels in modern \
+      history. Which is laregely due to the economic pressures like housing costs and student debt. (US Census \
+      Bureau)",
+      "Another consequence is the effect economic inequality has on people's mental and social well being. \
+      Financial instability can create uncertainty for the future, increasing stress especially those who \
+      feel that hard work alone is no longer enough to reach stability. Research in social science has shown \
+      that greater income inequality in a society is linked to higher levels of financial stress. (Urban \
+      Displacement - the Project Aims to Understand the Nature of Gentrification, and Displacement, and \
+      Exclusion in American Cities.)",
+      "For these reasons, wealth inequality in California must be understood as more than an economic \
+      imbalance. it represents a growing challenge for younger generations that affects economic \
+      mobility, stability, and long-term well-being of younger generations."
     ],
     quote:
       "[Insert a bold claim that explains how this system harms communities and blocks long-term stability.]",
@@ -248,7 +270,7 @@ export default function Page() {
             </ul>
           </nav>
         </div>
-      </header>
+      </header>f
 
       <main>
         <section id="home" className="hero-section">
