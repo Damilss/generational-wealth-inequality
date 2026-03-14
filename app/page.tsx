@@ -44,7 +44,6 @@ const navItems = [
   { id: "issue", label: "Why Is This an Issue?" },
   { id: "solutions", label: "Solutions" },
   { id: "counterargument", label: "Counterargument" },
-  { id: "change", label: "Making a Change" },
   { id: "conclusion", label: "Conclusion" },
   { id: "works-cited", label: "Works Cited" },
 ];
@@ -194,37 +193,9 @@ The Federal government should also implement stricter wage protections to avoid 
     ],
   },
   {
-    id: "change",
-    navLabel: "Making a Change",
-    part: "Part IV",
-    title: "What Must Change",
-    paragraphs: [
-      "[Use this section for our policy recommendations. Explain why these reforms are practical and why California should lead.]",
-    ],
-    cards: [
-      {
-        value: "01",
-        title: "Education & Financial Literacy",
-        body: "[Sample text: outline our first solution and expected outcome.]",
-      },
-      {
-        value: "02",
-        title: "Affordable Housing",
-        body: "[Sample text: outline our second solution and expected outcome.]",
-      },
-      {
-        value: "03",
-        title: "Fair Wages",
-        body: "[Sample text: outline our third solution and expected outcome.]",
-      },
-    ],
-    closingNote:
-      "[Optional instructor/callout box: reinforce why our proposed plan is timely, achievable, and persuasive.]",
-  },
-  {
     id: "conclusion",
     navLabel: "Conclusion",
-    part: "Part V",
+    part: "Part IV",
     title: "Conclusion",
     paragraphs: [
       `Wealth inequality in California represents a growing obstacle that extends far beyond simple economic statistics. For many young Americans, rising housing costs, stagnant wages, and limited access to financial resources have created financial independence significantly more difficult than it was for previous generations. These structural obstacles limit economic mobility and create a lasting disadvantage for individuals who lack the safety net of generational wealth or financial support.
@@ -238,7 +209,7 @@ The Federal government should also implement stricter wage protections to avoid 
   {
     id: "works-cited",
     navLabel: "Works Cited",
-    part: "Part VI",
+    part: "Part V",
     title: "Works Cited",
     paragraphs: [
       "MLA 9 citations (one source per card).",
