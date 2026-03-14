@@ -444,6 +444,32 @@ a {
   gap: 0.95rem;
 }
 
+.section-media {
+  margin: 2.6rem 0 0;
+  max-width: min(960px, 100%);
+  border: 2px solid #d9a94a;
+  border-radius: 20px;
+  background: var(--bg-card);
+  padding: clamp(0.7rem, 1.1vw, 1rem);
+  box-shadow: 0 10px 30px rgba(7, 16, 42, 0.08);
+}
+
+.section-media-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 2px solid rgba(19, 32, 71, 0.32);
+  background: #fff;
+}
+
+.section-media figcaption {
+  margin-top: 0.6rem;
+  color: #4f6185;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
 .info-card {
   border: 1px solid var(--line);
   border-radius: 16px;

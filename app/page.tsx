@@ -15,6 +15,14 @@ type SolutionPanel = {
   paragraph: string;
 };
 
+type SectionMedia = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  caption?: string;
+};
+
 type PageSection = {
   id: string;
   navLabel: string;
@@ -23,6 +31,7 @@ type PageSection = {
   paragraphs: string[];
   quote?: string;
   solutionPanels?: SolutionPanel[];
+  media?: SectionMedia;
   panelTitle?: string;
   bullets?: string[];
   cards?: StatCard[];
@@ -93,23 +102,12 @@ const sections: PageSection[] = [
       imbalance. it represents a growing challenge for younger generations that affects economic \
       mobility, stability, and long-term well-being of younger generations.",
     ],
-    cards: [
-      {
-        value: "$800K+",
-        title: "Example Metric",
-        body: "[Replace this with any information we've found from articles or evidence.]",
-      },
-      {
-        value: "44%",
-        title: "Example Burden",
-        body: "[Replace this with any information we've found from articles or evidence.]",
-      },
-      {
-        value: "#1",
-        title: "Example Rank",
-        body: "[Replace this with any information we've found from articles or evidence.]",
-      },
-    ],
+    media: {
+      src: "/MWStateMap.png",
+      alt: "Map visual related to wealth inequality across California",
+      width: 1364,
+      height: 1025,
+    },
   },
   {
     id: "solutions",
@@ -122,8 +120,12 @@ const sections: PageSection[] = [
     solutionPanels: [
       {
         title: "Solution 1",
-        paragraph:
-          "[Paste your full first solution paragraph here. This can be a long paragraph with your policy details and supporting evidence.]",
+        paragraph: `Solution 1 (State): Having California expand state-fund tuition assistance and financial literacy programs at public universities to prevent wealth inequality from compounding across generations.
+
+Addressing generational wealth inequality requires much more than just a late housing intervention. Guzman’s analysis of California's Dream for All loan programs highlights that such programs can assist, yet their reach remains minimal. The program was “exhausted in 11 days, distributing $288 million to support the purchase of about 2500 homes" (Guzman 2) and was only granted in “10 counties" (Guzman 2) across California. In the end, Guzman concludes that the program influences “less than 1% of buyers" (8) and “will not be a cure-all for the crisis" (18).
+These discoveries imply that interventions occurring later in adulthood, such as homeownership subsidies, may not be adequate to close generational wealth gaps. Research quoted in the study further establishes that wealth disparities grow significantly during early adulthood. As noted in the literature review, “By age 30, the Black-white median wealth gap exceeds $21,000" (Guzman 7). This broadening gap highlights the magnitude of intervening before economic inequality compounds.
+California can intervene earlier in the life cycle by developing need-based tuition assistance within the UC and CSU systems. Lowering student debt for first-generation and low-income students reduces additional burdens in the critical transition into the workforce. Furthermore, introducing mandatory financial literacy education would address the exclusion created by the financial systems that have historically shaped wealth gaps. Guzman illuminates redlining, “created a structure that incentivized housing discrimination" (1), demonstrating how policy-driven exclusion built a limit on access to financial opportunity. Guaranteeing universal financial education would help address those historical disadvantages.
+By shifting intervention to the educational level, California can move to address those inequalities before they solidify into long-term wealth disparities. (269 words)`,
       },
       {
         title: "Solution 2",
@@ -261,6 +263,21 @@ function ContentSection({ section }: { section: PageSection }) {
               </ScrollReveal>
             ))}
           </div>
+        )}
+
+        {section.media && (
+          <ScrollReveal delay={0.14}>
+            <figure className="section-media">
+              <Image
+                src={section.media.src}
+                alt={section.media.alt}
+                width={section.media.width}
+                height={section.media.height}
+                className="section-media-image"
+              />
+              {section.media.caption && <figcaption>{section.media.caption}</figcaption>}
+            </figure>
+          </ScrollReveal>
         )}
 
         {section.closingNote && (
