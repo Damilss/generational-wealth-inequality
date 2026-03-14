@@ -130,7 +130,37 @@ By shifting intervention to the educational level, California can move to addres
       {
         title: "Solution 2",
         paragraph:
-          "[Paste your full second solution paragraph here. This can also be a long paragraph with implementation details and impact.]",
+          `Solution 2 (Nationwide): Increase Federal Minimum Wage Nationwide and improve workers' rights
+While state-level educational reform targets early adulthood, a broader national labor reform is also 
+necessary to sustain long-term economic mobility. Guzman emphasizes, “The gaps in California’s equity 
+crisis come as a result of centuries of discrimination” (Guzman 2), tied to decades of discriminatory 
+housing and lending practices. These structural barriers extend beyond housing, labor markets, and income 
+distribution. Guzman further warns that "California's wealth gap will continue to widen, disproportionately 
+forcing people" (Guzman 2). Young adults entering low-wage labor markets face additional barriers to saving, 
+investing, or building assets. The major concern is the current federal minimum wage, which has stayed at 
+$7.25 for the past 16 years. As shown in Figure 3, minimum wage levels vary significantly across states, 
+highlighting the lack of consistent federal wage protections. Because many young adults are overrepresented 
+in lower-paying jobs, frozen wages make it difficult for them to afford housing, education, or savings. 
+Increasing the federal minimum wage would ensure that full-time workers can meet those basic life expenses 
+and lower financial instability. Also, it can increase consumer spending and overall help the economy, 
+therefore, in the long run, benefiting both workers and local businesses. The first course of action would 
+be to increase the Federal minimum wage to a livable wage, estimated at roughly $23 per hour in 2025. 
+States should also seek to increase their own minimum wages due to some states having higher costs of living. 
+The Federal government should also implement stricter wage protections to avoid companies taking advantage of
+ their employees. Some may argue that the increase in minimum wage could have a detriment towards small 
+ businesses, however this can be mitigated by implementing federal support programs for small businesses. 
+ An increased minimum wage may also improve productivity amongst workers. Additionally, strengthening workers’ 
+ rights by expanding labor protections for entry-level employees and interns would help ensure that labor 
+ contributes to increasing wealth instead of reinforcing income inequality. As well as forming new worker’s 
+ unions in fields that have yet to form any would further improve workers’ rights and would also improve 
+ working conditions.Educational reforms address access to economic mobility prior to a person entering the 
+ workforce full-time as well as giving them knowledge of how to properly handle their own finances. This 
+ alone would not be enough but with the proposed federal wage changes, and improved workers rights 
+ California, and the rest of the United States would see a decrease in the wealth gap that we currently 
+ are being affected by.Many people and primarily large corporations will see these attempts at raising 
+ wages and improving workers’ rights as a threat to their income. In order to be able to properly implement 
+ change the people have to speak out and reach out to their representatives in order to see true change. (465)
+`,
       },
     ],
     quote:
@@ -220,7 +250,7 @@ function ContentSection({ section }: { section: PageSection }) {
         </div>
 
         {section.solutionPanels && (
-          <div className="solution-panel-grid">
+          <div className="solution-panel-grid" style={{ gridTemplateColumns: "1fr" }}>
             {section.solutionPanels.map((panel, index) => (
               <ScrollReveal key={panel.title} delay={0.18 + index * 0.08}>
                 <article className="solution-panel">
@@ -372,7 +402,11 @@ export default function Page() {
                     height={700}
                     className="thesis-figure-fallback"
                   />
-                  <figcaption>Figure 8. [Replace with your source caption and citation.]</figcaption>
+                  <figcaption>
+                    Figure 8. County map of California showing how unevenly income is distributed; darker
+                    counties indicate a higher share of total 1997 income received by the top 20% of
+                    taxpayers.
+                  </figcaption>
                 </figure>
 
                 <p className="essay-paragraph">
