@@ -358,6 +358,33 @@ a {
   max-width: 70ch;
 }
 
+.solution-panel-grid {
+  margin-top: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.95rem;
+}
+
+.solution-panel {
+  border: 1px solid rgba(19, 32, 71, 0.2);
+  border-radius: 16px;
+  background: rgba(249, 247, 238, 0.95);
+  padding: clamp(1rem, 1.2vw + 0.8rem, 1.6rem);
+}
+
+.solution-panel h3 {
+  margin: 0;
+  color: #132047;
+  font-size: clamp(1.2rem, 1.8vw, 1.65rem);
+}
+
+.solution-panel p {
+  margin: 0.75rem 0 0;
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.15vw, 1.3rem);
+  line-height: 1.55;
+}
+
 .bullet-panel {
   margin-top: 1.8rem;
   border: 1px solid rgba(233, 190, 86, 0.65);
@@ -521,6 +548,10 @@ a {
   }
 
   .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solution-panel-grid {
     grid-template-columns: 1fr;
   }
 

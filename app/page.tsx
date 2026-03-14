@@ -10,6 +10,11 @@ type StatCard = {
   body: string;
 };
 
+type SolutionPanel = {
+  title: string;
+  paragraph: string;
+};
+
 type PageSection = {
   id: string;
   navLabel: string;
@@ -17,6 +22,7 @@ type PageSection = {
   title: string;
   paragraphs: string[];
   quote?: string;
+  solutionPanels?: SolutionPanel[];
   panelTitle?: string;
   bullets?: string[];
   cards?: StatCard[];
@@ -28,6 +34,7 @@ const navItems = [
   { id: "thesis", label: "Thesis" },
   { id: "issue", label: "Why Is This an Issue?" },
   { id: "solutions", label: "Solutions" },
+  { id: "counterargument", label: "Counterargument" },
   { id: "change", label: "Making a Change" },
   { id: "works-cited", label: "Works Cited" },
 ];
@@ -84,10 +91,8 @@ const sections: PageSection[] = [
       Exclusion in American Cities.)",
       "For these reasons, wealth inequality in California must be understood as more than an economic \
       imbalance. it represents a growing challenge for younger generations that affects economic \
-      mobility, stability, and long-term well-being of younger generations."
+      mobility, stability, and long-term well-being of younger generations.",
     ],
-    quote:
-      "[Insert a bold claim that explains how this system harms communities and blocks long-term stability.]",
     cards: [
       {
         value: "$800K+",
@@ -112,27 +117,37 @@ const sections: PageSection[] = [
     part: "Part II",
     title: "A Generation Feeling the Impact",
     paragraphs: [
-      "Addresssing generational wealth inequality requires much more than just a late housing intervention. \
-      Guzman's analysis of California's Dream for All loan program highlights that such programs can assist, \
-      yet their reach remains minimal. The program was \"exhausted in 11 days, distributing $288 million \
-      to support the purchase of about 2500 homes\" (Guzman 2) and was only granted in \"10 counties\" (Guzman 2) \
-      across California. In the end. Guzman concludes that the progrma influences \"less than 1% of buyers\" (8) \
-      and \"will not be a cure-all for the crisis\" (18).",
-      "[Connect personal impact to larger systems so readers understand why this is structural, not individual failure.]",
+      "[Use this short intro to frame your proposed path forward before the two full solutions below.]",
     ],
-    panelTitle: "Ripple Effects",
-    bullets: [
-      "[Mental Health: add one sentence about stress, uncertainty, and long-term pressure.]",
-      "[Social Mobility: add one sentence about blocked opportunity and limited upward movement.]",
-      "[Trust in Institutions: add one sentence about losing confidence in systems.]",
+    solutionPanels: [
+      {
+        title: "Solution 1",
+        paragraph:
+          "[Paste your full first solution paragraph here. This can be a long paragraph with your policy details and supporting evidence.]",
+      },
+      {
+        title: "Solution 2",
+        paragraph:
+          "[Paste your full second solution paragraph here. This can also be a long paragraph with implementation details and impact.]",
+      },
     ],
     quote:
-      "[Insert a transition statement here that moves our argument from impact toward policy action.]",
+      "[Insert a bold claim that explains how this system harms communities and blocks long-term stability.]",
+  },
+  {
+    id: "counterargument",
+    navLabel: "Counterargument",
+    part: "Part III",
+    title: "Addressing the Counterargument",
+    paragraphs: [
+      "[Add the strongest opposing view here. Explain why some people argue this inequality is normal or unavoidable.]",
+      "[Rebut that view with evidence and logic to show why structural change is still necessary.]",
+    ],
   },
   {
     id: "change",
     navLabel: "Making a Change",
-    part: "Part III",
+    part: "Part IV",
     title: "What Must Change",
     paragraphs: [
       "[Use this section for our policy recommendations. Explain why these reforms are practical and why California should lead.]",
@@ -160,7 +175,7 @@ const sections: PageSection[] = [
   {
     id: "works-cited",
     navLabel: "Works Cited",
-    part: "Part IV",
+    part: "Part V",
     title: "Works Cited",
     paragraphs: [
       "[Replace each placeholder with our required citation format for ENGL 133.]",
@@ -201,6 +216,19 @@ function ContentSection({ section }: { section: PageSection }) {
             </ScrollReveal>
           ))}
         </div>
+
+        {section.solutionPanels && (
+          <div className="solution-panel-grid">
+            {section.solutionPanels.map((panel, index) => (
+              <ScrollReveal key={panel.title} delay={0.18 + index * 0.08}>
+                <article className="solution-panel">
+                  <h3>{panel.title}</h3>
+                  <p>{panel.paragraph}</p>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+        )}
 
         {section.panelTitle && section.bullets && (
           <ScrollReveal delay={0.18}>
@@ -275,7 +303,7 @@ export default function Page() {
             </ul>
           </nav>
         </div>
-      </header>f
+      </header>
 
       <main>
         <section id="home" className="hero-section">
